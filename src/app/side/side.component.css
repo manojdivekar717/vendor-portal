@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+  
+  }
+  .mat-sidenav-container .mat-sidenav .sidebar{
+    display: flex;
+    position: relative;
+    
+  
+  }
+  body{
+    font-family: 'Segoe UI';
+  }
+  
+  .mat-sidenav-container .mat-sidenav .sidebar .sidebar-main img{
+  margin-left: 2ch;
+  padding-top: 1ch;
+  
+  }
+  .mat-sidenav-container .mat-sidenav .sidebar .sidebar-main ul h6{
+      height: 7.1ch;
+      width: 22.2ch;
+      text-align: center;
+      padding-top:2.5ch;
+  }
+  
+  .sidenav-container {
+    height: 100%;
+  }
+  
+
+  
+  .content{
+  padding: 16px;
+  
+  }
+  span.example-spacer {
+    flex: 1 1 auto;
+  }
+span.spacer {
+    flex: 1 1 auto;
+  }
+
+
+
+
+
+

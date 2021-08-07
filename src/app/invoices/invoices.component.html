@@ -1,0 +1,109 @@
+<body>
+    <mat-sidenav-container class="sidenav-container">
+      <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+      <div class="sidebar ">
+        <div class="sidebar-main" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+          <ul>
+            <div>
+              <a href="#">
+                <h3 style="background-color:#A2EFF7;"><img height="60px" width="110px" src="../../assets/sciqus.png"
+                    alt=""></h3>
+              </a>
+            </div>
+            <h6 style="background-color:#A2EFF7; height: 1ch;"></h6>
+            <form style="background:#A2EFF7;">
+              <div class=" p-1 bg-light rounded rounded-pill shadow-sm"
+                style="height: 4ch;width: 15ch; margin-left: 2.5ch;">
+                <div class="input-group w-75 " style="margin-left: 1ch;">
+                  <div class="input-group-prepend">
+                    <button id="button-addon2" type="submit" class="btn btn-link text-dark "><i
+                        class="fa fa-fw fa-search"></i></button>
+                  </div>
+                  <input type="search" placeholder="Search" class="form-control border-0 bg-light "
+                    style="width: -500px;">
+                </div>
+              </div>
+            </form>
+  
+  
+  
+            <a routerLink="/">
+              <h6 style="background-color:#90EEF8;color:black;">Dashboard</h6>
+            </a>
+            <a routerLink="/projects">
+              <h6 style="background-color:#6FE9F6;color:black;">Projects</h6>
+            </a>
+            <a routerLink="/categories">
+              <h6 style="background-color:#4DE5F3;color:black;">Categories</h6>
+            </a>
+            <a routerLink="/contracts">
+              <h6 style="background-color:#2BDFF0;color:black;">Contracts</h6>
+            </a>
+            <a routerLink="/vendors">
+              <h6 style="background-color:#0ED6EB;color:black;">Vendors</h6>
+            </a>
+            <a routerLink="/invoices">
+              <h6 style="background-color:#0CB7C9;color:blue;">Invoices</h6>
+            </a>
+            <a routerLink="/insurance">
+              <h6 style="background-color:#0A99A9;color:black;">Insurance</h6>
+            </a>
+            <a routerLink="/capacity">
+              <h6 style="background-color:#087A85;color:black;">Capacity</h6>
+            </a>
+            <a routerLink="/policies">
+              <h6 style="background-color:#075B65;color:black;">Policies</h6>
+            </a>
+            <a routerLink="/publish">
+              <h6 style="background-color:#043D44;color:black;">Publish</h6>
+            </a>
+  
+          </ul>
+        </div>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar>
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+
+        <span style="font-family: 'Segoe UI'; font-size: 2.8ch;" class="text-start">Vendor Portal </span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <mat-icon>notifications</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon " aria-label="Example icon-button with heart icon">
+          <mat-icon>email</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon " aria-label="Example icon-button with heart icon">
+          <mat-icon>settings</mat-icon>
+        </button>
+
+
+      </mat-toolbar>
+   
+      <mat-toolbar style="background-color: #CFD4D5;">
+        <span>Invoices</span>
+        <span class="spacer"></span>
+      
+          <a href="" style="color: black;">
+            
+            <button mat-icon-button class="example-icon " aria-label="Example icon-button with account_circle icon">
+              <mat-icon>account_circle</mat-icon>
+            </button> </a>
+         
+       
+        <span>User Name</span>
+      </mat-toolbar>
+  
+
+
+<!-- ADD CONTENT -->
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+</body>
